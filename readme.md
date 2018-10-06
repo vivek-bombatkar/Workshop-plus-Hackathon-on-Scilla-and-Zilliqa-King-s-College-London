@@ -6,8 +6,19 @@ This repositry is my collection of notes and realted documents for the workshop 
 - Zilliqa - the scalable and secure blockchain platform for hosting decentralized applications.  
 - SCILLA  - Safe-By-Design intermediate-level smart contract language being developed for Zilliqa.  
 
-> [ide for Zilliqa writing smart contracts ](https://ide.zilliqa.com/)  
-> [souped-up IDE for testing Scilla smart contracts](https://savant-ide.zilliqa.com/)  
+- IDE
+    > [1. ide for Zilliqa writing smart contracts ](https://ide.zilliqa.com/)  
+    > [2. souped-up IDE for testing Scilla smart contracts](https://savant-ide.zilliqa.com/)  
+
+- Other Links
+    > https://github.com/Zilliqa/Zilliqa  
+    > https://wallet.zilliqa.com/home
+    > https://scilla-lang.org/
+    > https://zilliqa.com/  
+    > https://explorer.zilliqa.com/home  
+    > https://github.com/Zilliqa/scilla-docs/blob/master/docs/source/scilla-by-example.rst  
+    > https://github.com/Zilliqa/savant-ide  
+    > 
 
 - Zilliqa capable of processing thousands of transactions per second with ***sharding*** built into it.   
 - ***Sharding*** 
@@ -20,3 +31,6 @@ This repositry is my collection of notes and realted documents for the workshop 
 - Zilliqa has the potential to match throughput benchmarks set by traditional payment methods (such as VISA and MasterCard). More importantly, Zilliqa’s transaction throughput increases (roughly) linearly with its network size.  
 
 - High throughput- you can focus on developing your ideas without worrying about network congestion, high transaction fees or security which are the key issues with legacy blockchain platforms.
+
+- The approach that Zilliqa has chosen with sharding is that every single node will have a copy of the current state (the bank balances in our example) but then the transactions history will be split in pieces so that not everyone will have to have a full copy of it.  
+
