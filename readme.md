@@ -22,8 +22,9 @@ This repositry is my collection of notes and realted documents for the workshop 
 
 - Zilliqa capable of processing thousands of transactions per second with ***sharding*** built into it.   
 - ***Sharding*** 
-> https://medium.com/@giottodf/zilliqa-a-novel-approach-to-sharding-d79249347a1f  
-> https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65  
+    - > https://medium.com/@giottodf/zilliqa-a-novel-approach-to-sharding-d79249347a1f  
+    - > https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65  
+
     - sharding is a mandatory approach for scalability of blockchains which want to be more than just settlement layers.  
     - is a mechanism that allows the Zilliqa network to be divided into smaller groups of nodes each referred to as a shard. 
     - Simply put, imagine a network of 1,000 nodes, then, one may divide the network into 10 shards each composed of 100 nodes.  
