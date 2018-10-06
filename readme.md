@@ -2,9 +2,8 @@
 # Zilliqa Blockchain Workshop & Hackathon for Developers, King's College London
 This repositry is my collection of notes and realted documents for the workshop and hackathon by Zilliqa.  
 
-- 
-- Zilliqa - the scalable and secure blockchain platform for hosting decentralized applications.  
-- SCILLA  - Safe-By-Design intermediate-level smart contract language being developed for Zilliqa.  
+### Zilliqa - the scalable and secure blockchain platform for hosting decentralized applications.  
+### SCILLA  - Safe-By-Design intermediate-level smart contract language being developed for Zilliqa.  
 
 - IDE
     > [1. ide for Zilliqa writing smart contracts ](https://ide.zilliqa.com/)  
