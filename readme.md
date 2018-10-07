@@ -59,7 +59,8 @@ This repositry is my collection of notes and realted documents for the workshop 
      - Call
         - select account #
         - select contract 
-            
+
+> https://github.com/Zilliqa/scilla-docs/blob/master/docs/source/scilla-by-example.rst  
 
 - HelloWorld.scilla  
 ```
@@ -113,6 +114,20 @@ end
 
 ```
 
+
+- mutable variable welcome_msg  
+- immutable variable owner  
+- interface getHello  
+- Libraries : A Scilla contract may come with some helper libraries that declare purely functional (with no state manipulation) components of a contract
+- only owner of the contract can call the contract with below check
+```   is_owner = builtin eq owner _sender; ```  
+
+## key words
+
+- ***Nonce***
+    - increment every time   
+    - used for solving 'double spending' by sequencing the calls     
+    
 - Message vs Event  
 ***Message*** 
 internal between nodes 
@@ -129,6 +144,7 @@ r <- welcome_msg;
 e = { _eventname : "SedingHello"; caller : _sender; msg : r };
 event e 
 ``` 
+    
 
 
 
