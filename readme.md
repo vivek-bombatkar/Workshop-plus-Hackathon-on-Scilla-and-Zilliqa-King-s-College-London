@@ -9,6 +9,7 @@ This repositry is my collection of notes and realted documents for the workshop 
 
 
 ## Hack topic - Blockchain-backed analytics : Adding blockchain-based quality gates to data science projects
+[Link to the paper](https://github.com/vivek-bombatkar/Workshop-plus-Hackathon-on-Scilla-and-Zilliqa-King-s-College-London/blob/master/8292.pdf)  
 > this paper was presented in 2nd International Conference on Advanced Research Methods and Analytics (CARMA2018)  
 
 - We will be done using one 'smart contracts'
