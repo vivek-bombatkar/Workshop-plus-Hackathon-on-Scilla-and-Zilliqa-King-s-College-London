@@ -92,12 +92,18 @@ end
 ```
 
 - Message vs Event  
-| Message | Event | 
-| -- | -- | 
-| internal between nodes | to the external world | 
-|  |  ```    r <- welcome_msg;
-    e = { _eventname : "SedingHello"; caller : _sender; msg : r };
-    event e ``` | 
+***Message*** 
+internal between nodes 
+```
+```
+
+***Events***
+to the external world  
+```    
+r <- welcome_msg;
+e = { _eventname : "SedingHello"; caller : _sender; msg : r };
+event e 
+``` 
 
 
 
