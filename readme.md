@@ -91,7 +91,7 @@ end
 
 ```
 
-- Message vs Event
+- Message vs Event  
 | Message | Event | 
 | -- | -- | 
 | internal between nodes | to the external world | 
