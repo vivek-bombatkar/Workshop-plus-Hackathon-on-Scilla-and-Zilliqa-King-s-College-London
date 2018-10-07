@@ -32,5 +32,72 @@ This repositry is my collection of notes and realted documents for the workshop 
 
 - High throughput- you can focus on developing your ideas without worrying about network congestion, high transaction fees or security which are the key issues with legacy blockchain platforms.
 
-- The approach that Zilliqa has chosen with sharding is that every single node will have a copy of the current state (the bank balances in our example) but then the transactions history will be split in pieces so that not everyone will have to have a full copy of it.  
+- The approach that Zilliqa has chosen with sharding is that every single node will have a copy of the current state (the bank balances in our example) but then the transactions history will be split in pieces so that not everyone will have to have a full copy of it.
+
+
+## run your contract on IDE  
+> https://savant-ide.zilliqa.com/  
+- Steps : wtrite > save > Check > Deploy > Call  
+
+- HelloWorld.scilla  
+```
+(* HelloWorld contract *)
+
+import ListUtils
+
+(***************************************************)
+(*               Associated library                *)
+(***************************************************)
+library HelloWorld
+
+let one_msg = 
+  fun (msg : Message) => 
+  let nil_msg = Nil {Message} in
+  Cons {Message} msg nil_msg
+
+let not_owner_code = Int32 1
+let set_hello_code = Int32 2
+
+(***************************************************)
+(*             The contract definition             *)
+(***************************************************)
+
+contract HelloWorld
+(owner: ByStr20)
+
+field welcome_msg : String = ""
+
+transition setHello (msg : String)
+  is_owner = builtin eq owner _sender;
+  match is_owner with
+  | False =>
+    msg = {_tag : "Main"; _recipient : _sender; _amount : Uint128 0; code : not_owner_code};
+    msgs = one_msg msg;
+    send msgs
+  | True =>
+    welcome_msg := msg;
+    msg = {_tag : "Main"; _recipient : _sender; _amount : Uint128 0; code : set_hello_code};
+    msgs = one_msg msg;
+    send msgs
+  end
+end
+
+
+transition getHello ()
+    r <- welcome_msg;
+    e = { _eventname : "SedingHello"; caller : _sender; msg : r };
+    event e
+end
+
+```
+
+- Message vs Event
+| Message | Event | 
+| -- | -- | 
+| internal between nodes | to the external world | 
+|  |  ```    r <- welcome_msg;
+    e = { _eventname : "SedingHello"; caller : _sender; msg : r };
+    event e ``` | 
+
+
 
