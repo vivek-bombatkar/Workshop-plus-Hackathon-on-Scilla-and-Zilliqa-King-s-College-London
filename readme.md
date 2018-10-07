@@ -51,6 +51,7 @@ field welcome_msg : String = ""
 field id : Uint128 = Uint128 0
 field id_map : Map ByStr20 Uint128 = Emp ByStr20 Uint128
 
+(*chek tx# present in blockchain*)
 transition setTransitions (msg : String)
   one = Uint128 1;
   tmp <- id;
@@ -63,7 +64,6 @@ transition setTransitions (msg : String)
     msgs = one_msg msg;
     send msgs
   | True =>
-    (*chek tx# present in blockchain*)
     tmp1 <- id_map;
     tmp2 = builtin id_map 
     welcome_msg := msg;
@@ -73,6 +73,10 @@ transition setTransitions (msg : String)
   end
 end
 
+(*chek tx# present in blockchain*)
+transition setTransitions (msg : String)
+
+end
 ```
 
 
