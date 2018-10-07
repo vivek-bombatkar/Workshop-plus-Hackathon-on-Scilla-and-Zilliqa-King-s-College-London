@@ -37,7 +37,26 @@ This repositry is my collection of notes and realted documents for the workshop 
 
 ## run your contract on IDE  
 > https://savant-ide.zilliqa.com/  
-- Steps : wtrite > save > Check > Deploy > Call  
+- ***Development cycle***  : wtrite > save > Check > Deploy > Call
+    - write : writre scilla code  
+    - save : save file as .scilla  
+    - chcek : click 'check' to syntaxt checking  
+    - depoloy :     
+       - deploy to the blockchain
+       - select account
+       - selct contract (.scilla file)
+       - ammount / gas  / gas price could be untouch 
+       - fill the params needed for contract, like account # etc. This could change based on what param you have define  
+       ```
+       Your contract was successfully deployed to 0xC900AE444C600557BC8CF483D4B974581D3188C3
+        Gas used: 53
+        Gas price: 1
+        Transaction cost: 53 ZIL
+        ```
+     - Call
+        - select account #
+        - select contract 
+            
 
 - HelloWorld.scilla  
 ```
@@ -95,6 +114,9 @@ end
 ***Message*** 
 internal between nodes 
 ```
+    r <- welcome_msg;
+    e = { _eventname : "SedingHello"; caller : _sender; msg : r };
+    event e
 ```
 
 ***Events***
