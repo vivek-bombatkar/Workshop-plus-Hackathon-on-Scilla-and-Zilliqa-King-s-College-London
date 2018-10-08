@@ -4,8 +4,8 @@ This repositry is my collection of notes and realted documents for the workshop 
 
 > Follow me on,  [LinkedIn](https://www.linkedin.com/in/vivek-bombatkar/), [Github](https://github.com/vivek-bombatkar)  
 
-### Zilliqa - the scalable and secure blockchain platform for hosting decentralized applications.  
-### SCILLA  - Safe-By-Design intermediate-level smart contract language being developed for Zilliqa.  
+-  Zilliqa - the scalable and secure blockchain platform for hosting decentralized applications.  
+-  SCILLA  - Safe-By-Design intermediate-level smart contract language being developed for Zilliqa.  
 
 
 ## Hack topic - Blockchain-backed analytics : Adding blockchain-based quality gates to data science projects
