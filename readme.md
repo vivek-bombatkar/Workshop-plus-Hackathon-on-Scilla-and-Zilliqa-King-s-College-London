@@ -16,7 +16,7 @@ This repositry is my collection of notes and realted documents for the workshop 
 - this smart contract will maintain the 'map' of transitions againt the owner and account 
 - with 2 transitions
 - One is 'setTransitions'
-    - this will be implementing 'mpa' internally 
+    - this will be implementing 'map' internally 
     - 2 parames in K,V format.
     - K : timestamp
     - V : JSON containing data file or model code  
